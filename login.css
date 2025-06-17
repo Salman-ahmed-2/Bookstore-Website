@@ -1,0 +1,292 @@
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+ background-color:#FFB800;
+
+  height: 170vh;
+ 
+  
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+
+ 
+}
+
+.header {
+  margin-top: 0;
+  background-color: saddlebrown;
+  
+  background-image: url(OIP.jpg);
+  padding: 5px;
+  width: 98.37vw;
+top: 0%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  color: #ecf0f1;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: saddlebrown;
+  padding: 15px ;
+ 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 97vw;
+  display: flex;
+  
+  justify-content: space-between; 
+   :hover{
+    color: #FFB800;
+  }
+
+
+  a {
+  color: #ecf0f1;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+
+ 
+}
+}
+
+
+
+.wrapper {
+  position: relative;
+  
+  top: 150px;
+  left: 550px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 40px;
+  align-items: center;
+  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  
+}
+
+.wrapper h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px 20px 15px 50px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-box input::placeholder {
+  color: #ddd;
+}
+
+.input-box i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.remember-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  
+}
+
+.remember-forget label {
+  display: flex;
+  align-items: center;
+  
+}
+
+.remember-forget label input {
+  margin-right: 5px;
+  
+}
+
+.remember-forget a {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+.remember-forget a:hover {
+  color: #fff;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #FFD700;
+  color: #5A3227;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  a{
+    color: saddlebrown;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+button:hover {
+  background: #FFB800;
+  color: #fff;
+
+}
+.btn,
+
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link p a {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.ex{
+  position: relative;
+  top: -310px;
+  
+  
+  img{
+    position: relative;
+    width: 96vw;
+    top: -40px;
+    padding: 0px 20px 0px 20px;
+    height: 100vh;
+  }
+}
+.bg{
+  position: relative;
+  
+  
+  z-index: -2;
+  top: -377px;
+  img{
+    width: 99vw;
+    height: 100vh;
+  }
+
+}
+ /* Footer */
+ .footer {
+  position: relative;
+  background-color: saddlebrown;
+  color: #fff;
+  width: 100%;
+  top: -200px;
+  text-align: center;
+  padding-top: 70px;
+  
+  box-shadow: 0 4px 6px rgba(77, 65, 65, 0.1);
+}
+
+.footer .column {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+  margin: 0 1%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer .column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.footer .column p,
+.footer .column a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.footer .column a:hover {
+  color: #f39c12;
+}
+.footer .column i {
+  margin-right: 8px; 
+  color: #FFD700; 
+}
+
+.footer .social-icons i {
+  margin: 0 15px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer .social-icons i:hover {
+  color: #f39c12;
+}
+
+.sidebar ul li img {
+  width: 50px;
+  height: 75px;
+  object-fit: cover; 
+}
+
+
+
+@media (max-width: 768px) {
+  .footer .column {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}

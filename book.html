@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit in the North</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-size: cover; 
+    background-position: center; 
+    color: #333;
+  
+}
+
+        /* Header */
+        .header {
+            
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: -1;
+            background-color: saddlebrown;
+        }
+
+        .header h1 {
+            color: yellow;
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: darkgoldenrod;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .logo-container img {
+  height: 50px; /* Set logo height */
+  width: auto;  /* Maintain aspect ratio */
+}
+
+        .navbar a:hover {
+            color: #e67e22;
+        }
+
+        .container {
+          
+           
+            padding: 20px;
+        }
+
+        .sidebar,
+        .main-content {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: darkgoldenrod;
+        }
+
+        .sidebar {
+            background-image: url(book.jpg);
+            color: #fff;
+            
+        }
+
+        .sidebar h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            background-color: saddlebrown;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        .sidebar ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 200px;
+            background-color: rgba(139, 69, 19, 0.555)
+        }
+
+        .sidebar ul li img {
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .sidebar ul li span {
+            font-size: 16px;
+        }
+
+       
+
+
+        .product-details .price {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+       
+
+        .btn {
+            width: 70%;
+            margin: 8px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-details .old-price {
+            text-decoration: line-through;
+            color:white;
+        }
+
+        .product-details button {
+            padding: 12px 24px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 08px auto;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .product-details button:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .add-to-cart {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .add-to-wishlist {
+            background-color: saddlebrown;
+            color: #fff;
+        }
+
+        .buy-now {
+            background-color: #ff0;
+            color: #000;
+        }
+
+        .related h2 {
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #ff0;
+            text-align: center;
+        }
+
+        .related-products {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            color: #fff;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            background-image: url(alis1.jpg);
+        }
+
+        .related-products .product {
+            width: 30%;
+            color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            align-items: center;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: rgba(54, 34, 4, 0.744)
+        }
+
+        .related-products .product img {
+            width: 200px;
+            height: 300px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .related-products .product h3 {
+            font-size: 18px;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .related-products .product .price {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .related-products .product .rating {
+            color: #ff0;
+        }
+
+        .related-products .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .related-products .product {
+                width: 45%;
+            }
+
+            .product-details h1 {
+                font-size: 24px;
+            }
+
+            .product-details .price {
+                font-size: 20px;
+            }
+
+            .product-details button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .related-products .product {
+                width: 80%;
+            }
+
+            .product-details h1 {
+                font-size: 22px;
+            }
+
+            .product-details .price {
+                font-size: 18px;
+            }
+
+            .product-details button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .footer .column {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+       /* Footer */
+ .footer {
+  position: relative;
+  background-color: saddlebrown;
+  color: #fff;
+  width: 100%;
+ 
+  text-align: center;
+  padding-top: 70px;
+  
+  box-shadow: 0 4px 6px rgba(77, 65, 65, 0.1);
+}
+
+.footer .column {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+  margin: 0 1%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer .column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.footer .column p,
+.footer .column a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.footer .column a:hover {
+  color: #f39c12;
+}
+.footer .column i {
+  margin-right: 8px; 
+  color: #FFD700; 
+}
+
+.footer .social-icons i {
+  margin: 0 15px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer .social-icons i:hover {
+  color: #f39c12;
+}
+
+.sidebar ul li img {
+  width: 50px;
+  height: 75px;
+  object-fit: cover; 
+}
+
+
+
+@media (max-width: 768px) {
+  .footer .column {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer .column {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="logoo.jpeg" alt="Bookshop Logo"> 
+        <h1> ALI BHAI  <span style="color: white;">BOOKS</span></h1>
+    </div>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="catagory.html">Categories</a>
+        <a href="book.html">Books</a>
+        <a href="payment.html">payment</a>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Best Sales</h3>
+            <ul>
+                <li><img src="silentwomen.jpg" alt="Silent Women book cover"><span>Silent Women <br>
+                        $15.00</span></li>
+                <li><img src="wakemeup.jpg" alt="Wake Me Up book cover"><span>Wake Me Up <br> $7.00</span>
+                </li>
+                <li><img src="nightterrors.jpg" alt="Night Terrors book cover"><span>Night Terrors <br>
+                        $12.00</span></li>
+                <li><img src="mysticriver_.jpg" alt="Mystic River book cover"><span>Mystic River <br>
+                        $18.00</span></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <img src="visitinthe.jpg" alt="Visit in the North book cover" height="300" width="450">
+            <div class="product-details">
+                <h1>Visit in the North</h1>
+                
+                <p class="price">$10.00 <span class="old-price">$20.00</span></p>
+                <div class="btn">
+                    <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-wishlist">Add to Wishlist</button>
+                <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="related">
+            <h2>Related Products</h2>
+            <div class="related-products">
+                <div class="product">
+                    <img src="girlsat.jpg" alt="Girls at the Golden City" height="200" width="300">
+                    <h3>Girls at the Golden City</h3>
+                    <p class="price">$15.00</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="product">
+                    <img src="thestadium.jpg" alt="The Stadium by Night" height="200" width="300">
+                    <h3>The Stadium by Night</h3>
+                    <p class="price">$20.00</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="product">
+                    <img src="whenstars.jpg" alt="When the Stars Align" height="200" width="300">
+                    <h3>When the Stars Align</h3>
+                    <p class="price">$25.00</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="product">
+                    <img src="lasttime.jpg" alt="The Last Time We Broke Up" height="200" width="300">
+                    <h3>Last Time We Broke Up</h3>
+                    <p class="price">$30.00</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+                <div class="product">
+                    <img src="hidden.jpg" alt="Hidden Secrets" height="200" width="300">
+                    <h3>Hidden Secrets</h3>
+                    <p class="price">$22.00</p>
+                    <p class="rating">★★★★☆</p>
+                </div>
+                <div class="product">
+                    <img src="ocean.jpg" alt="Ocean Mysteries" height="200" width="300">
+                    <h3>Ocean Mysteries</h3>
+                    <p class="price">$19.00</p>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="footer">
+        <div class="column">
+            <h3>About Us</h3>
+            <p><i class='bx bx-user'></i> Salman Ahmed Khan (I24-3004)</p>
+            <p><i class='bx bx-user'></i> Alishba Nasir (I24-3176)</p>
+            <p><i class='bx bx-user'></i> Dua-e-Zainab (I23-3098)</p>
+        </div>
+        <div class="column">
+            <h3>Quick Links</h3>
+            <a href="home.html"><i class='bx bx-home'></i> Home</a>
+            <a href="book.html"><i class='bx bx-store'></i> Shop</a>
+            <a href="payment.html"><i class='bx bx-envelope'></i> Payment</a>
+        </div>
+        <div class="column">
+            <h3>Contact Us</h3>
+            <p><i class='bx bx-envelope'></i> Email: info@alibhaibookshop.com</p>
+            <p><i class='bx bx-phone'></i> Phone: +92 334 555555</p>
+        </div>
+        <div class="column">
+            <h3>Follow Us</h3>
+            <h4>www.alibhai.com</h4>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

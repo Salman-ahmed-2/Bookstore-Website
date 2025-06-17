@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="logo-container">
+       
+      <span class="brand-name">ALI BHAI BOOKS</span>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logoo.jpeg" height=50px width="70px" alt="Logo">
+            
+        </div>
+      
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="book.html">Shop</a></li>
+            <li><a href="catagory.html">catagory</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="payment.html">payment</a></li>
+        </ul>
+    </nav>
+
+  
+  <main class="content">
+    <h1 id="heading">Payment Details</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your Name" pattern="[A-Za-z\s]+" title="Name must contain only letters and spaces" required class="info">
+      
+      <label for="contact">Contact</label>
+      <input type="tel" id="contact" placeholder="Enter your Contact" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required class="info">
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your Email" required class="info">
+      
+      <label for="address">Shipping Address</label>
+      <input type="text" id="address" placeholder="Enter your Current Address" required class="info">
+      
+      <label for="payment-method">Select Payment Method:</label>
+      <select id="payment-method" class="info" required>
+        <option value="">--Choose a Payment Method--</option>
+        <option value="creditCard">Credit Card</option>
+        <option value="debitCard">Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+      
+      <button id="button" type="submit">Submit</button>
+    </form>
+  </main>
+
+  <div class="footer">
+        <div class="column">
+            <h3>About Us</h3>
+            <p><i class='bx bx-user'></i> Salman Ahmed Khan (I24-3004)</p>
+            <p><i class='bx bx-user'></i> Alishba Nasir (I24-3176)</p>
+            <p><i class='bx bx-user'></i> Dua-e-Zainab (I23-3098)</p>
+        </div>
+        <div class="column">
+            <h3>Quick Links</h3>
+            <a href="home.html"><i class='bx bx-home'></i> Home</a>
+            <a href="book.html"><i class='bx bx-store'></i>Book/a>
+            <a href="payment.html"><i class='bx bx-envelope'></i> Payment</a>
+        </div>
+        <div class="column">
+            <h3>Contact Us</h3>
+            <p><i class='bx bx-envelope'></i> Email: info@alibhaibookshop.com</p>
+            <p><i class='bx bx-phone'></i> Phone: +92 334 555555</p>
+        </div>
+        <div class="column">
+            <h3>Follow Us</h3>
+            
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

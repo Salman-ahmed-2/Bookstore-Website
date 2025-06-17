@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop - Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: saddlebrown;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: saddlebrown;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .header h1 {
+        color: #ecf0f1;
+        margin: 0;
+        font-size: 36px;
+      }
+
+      .navbar {
+        background-color: goldenrod;
+        padding: 15px;
+        text-align: center;
+       
+      }
+
+      .navbar a {
+        color: #ecf0f1;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .navbar a:hover {
+        color:saddlebrown
+      }
+
+      .cart-container {
+        background-color: #fff;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         background-color: goldenrod;
+         color: #ecf0f1;
+      }
+
+      .cart-container h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: saddlebrown;
+      }
+
+      .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        
+      }
+
+      .cart-table th,
+      .cart-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .cart-table th {
+        background-color: saddlebrown;
+        color: #fff;
+      }
+
+      .cart-table td img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+       
+      }
+
+      .cart-table td input[type="number"] {
+        width: 60px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .cart-table td .remove {
+       
+        color: saddlebrown;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .cart-table td .remove:hover {
+        color: #f39c12;
+      }
+
+      .cart-summary {
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+
+      .cart-summary .total {
+        color: saddlebrown;
+        font-size: 24px;
+      }
+
+      .continue-shopping {
+        display: block;
+        width: 220px;
+        margin: 30px auto;
+        padding: 12px;
+        background-color: saddlebrown;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+
+      .continue-shopping:hover {
+        background-color: #6b4a22;
+      }
+
+      /* Featured Collection */
+      .featured-collection {
+        background-color: #fff;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: goldenrod
+      }
+
+      .featured-collection h2 {
+        text-align: center;
+        font-size: 28px;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .books-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+      }
+
+      .book-card {
+        width: 22%;
+        margin-bottom: 20px;
+        background-color: saddlebrown;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        
+      }
+
+      .book-card:hover {
+        transform: scale(1.05);
+      }
+
+      .book-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .book-title {
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .book-price {
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #d1d1d1;
+      }
+
+     
+/* Footer */
+ .footer {
+  position: relative;
+  
+  padding-top:50px ;
+  background-color: saddlebrown;
+  color: #fff;
+  width: 100%;
+ 
+  text-align: center;
+  bottom: 0px;
+  box-shadow: 0 4px 6px rgba(77, 65, 65, 0.1);
+}
+
+.footer .column {
+  display: inline-block;
+  width: 23%;
+  vertical-align: top;
+  margin: 0 1%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer .column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.footer .column p,
+.footer .column a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px 0;
+  display: block;
+  font-size: 14px;
+}
+
+.footer .column a:hover {
+  color: #f39c12;
+}
+.footer .column i {
+  margin-right: 8px; 
+  color: #FFD700; 
+}
+
+.footer .social-icons i {
+  margin: 0 15px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer .social-icons i:hover {
+  color: #f39c12;
+}
+
+.sidebar ul li img {
+  width: 50px;
+  height: 75px;
+  object-fit: cover; 
+}
+
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .navbar a {
+          display: block;
+          margin: 10px 0;
+        }
+
+        .cart-table td input[type="number"] {
+          width: 50px;
+        }
+
+        .continue-shopping {
+          width: 100%;
+          padding: 12px;
+        }
+
+        .books-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .book-card {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>BOOK <span style="color: goldenrod;">SHOP</span></h1>
+    </div>
+    <div class="navbar">
+      <a href="home.html">Home</a>
+      <a href="catagory.html">Categories</a>
+      <a href="book.html">Books</a>
+      <a href="payment.html">Payment</a>
+    </div>
+
+    <div class="cart-container">
+      <h1>Your Cart</h1>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="ocean.jpg" alt="The Great Gatsby"></td>
+            <td>The Great Gatsby</td>
+            <td>$10.99</td>
+            <td><input type="number" value="1" min="1" /></td>
+            <td>$10.99</td>
+            <td><span class="remove">Remove</span></td>
+          </tr>
+          <tr>
+            <td><img src="nightterrors.jpg" alt="1984"></td>
+            <td>1984</td>
+            <td>$15.99</td>
+            <td><input type="number" value="1" min="1" /></td>
+            <td>$15.99</td>
+            <td><span class="remove">Remove</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>Total: <span class="total">$26.98</span></p>
+        <a href="home.html" class="continue-shopping">Continue Shopping</a>
+      </div>
+    </div>
+
+   
+    <div class="featured-collection">
+      <h2>Featured Collection</h2>
+      <div class="books-container">
+        <div class="book-card">
+          <img src="thestadium.jpg" alt="Book 1">
+          <div class="book-title">The Great Gatsby</div>
+          <div class="book-price">$10.99</div>
+        </div>
+        <div class="book-card">
+          <img src="visitinthe.jpg" alt="Book 2">
+          <div class="book-title">1984</div>
+          <div class="book-price">$15.99</div>
+        </div>
+        <div class="book-card">
+          <img src="wakemeup.jpg" alt="Book 3">
+          <div class="book-title">To Kill a Mockingbird</div>
+          <div class="book-price">$12.49</div>
+        </div>
+        <div class="book-card">
+          <img src="whenstars.jpg" alt="Book 4">
+          <div class="book-title">Moby Dick</div>
+          <div class="book-price">$18.00</div>
+        </div>
+      </div>
+    </div>
+
+   
+    
+    <div class="footer">
+        <div class="column">
+            <h3>About Us</h3>
+            <p><i class='bx bx-user'></i> Salman Ahmed Khan (I24-3004)</p>
+            <p><i class='bx bx-user'></i> Alishba Nasir (I24-3176)</p>
+            <p><i class='bx bx-user'></i> Dua-e-Zainab (I23-3098)</p>
+        </div>
+        <div class="column">
+            <h3>Quick Links</h3>
+            <a href="home.html"><i class='bx bx-home'></i> Home</a>
+            <a href="book.html"><i class='bx bx-store'></i> Shop</a>
+            <a href="payment.html"><i class='bx bx-envelope'></i> Payment</a>
+        </div>
+        <div class="column">
+            <h3>Contact Us</h3>
+            <p><i class='bx bx-envelope'></i> Email: info@alibhaibookshop.com</p>
+            <p><i class='bx bx-phone'></i> Phone: +92 334 555555</p>
+        </div>
+        <div class="column">
+            <h3>Follow Us</h3>
+            <h4>www.alibhai.com</h4>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
