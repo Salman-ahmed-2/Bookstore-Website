@@ -1,7 +1,7 @@
 # 📚 My Bookstore Web Application
 
 <div align="center">
-  <img src="logo.png" width="150" alt="Bookstore Logo"><br>
+  <img src="logoo.jpeg" width="150" alt="Bookstore Logo"><br>
   <b>My Bookstore - Online Book Shopping</b><br>
   <i>Built with HTML, CSS, and JavaScript (No CMS, No Templates)</i>
 </div>
@@ -20,7 +20,7 @@
 
 ---
 
-## 📖 About the Project
+##  About the Project
 
 A fully custom-built **Bookstore Web Application** developed for the **CL-1000 Introduction to ICT** course. This website allows users to register, browse books by category, view book details, manage their cart, and place orders. Built from scratch using only **HTML**, **CSS**, and **JavaScript** — with no use of CMS, templates, or paid libraries/scripts.
 
@@ -28,7 +28,7 @@ A fully custom-built **Bookstore Web Application** developed for the **CL-1000 I
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - 🔐 **Login/Sign-Up Page** – User authentication form interface  
 - 🏠 **Home Page** – Welcome area and featured books  
@@ -42,7 +42,7 @@ A fully custom-built **Bookstore Web Application** developed for the **CL-1000 I
 
 ---
 
-## 🛠️ How to Use
+##  How to Use
 
 ### 🔽 Clone or Download the Project
 
@@ -51,7 +51,7 @@ git clone https://github.com/your-username/bookstore-project
 cd bookstore-project
 ```
 
-### 🚀 Open in Browser
+###  Open in Browser
 
 You can open the site using:
 
@@ -66,27 +66,25 @@ open index.html        # macOS
 
 ---
 
-## 🌐 Preview
+##  Preview
 
-![Homepage Screenshot](screenshot_home.png)  
-![Book Details](screenshot_book.png)  
-![Shopping Cart](screenshot_cart.png)  
+
 ![Live Demo](bookstore_demo.gif)
 
 ---
 
-## 📥 Download
+##  Download
 
 To download manually:
 
-1. Go to the [GitHub Repo](https://github.com/your-username/bookstore-project)
+1. Go to the [GitHub Repo](https://github.com/salman-ahmed-2/Bookstore-Website)
 2. Click `Code` → `Download ZIP`
 3. Extract the folder
 4. Open `index.html` or `login.html` in your browser
 
 ---
 
-## 🔧 Technologies Used
+##  Technologies Used
 
 ![HTML](https://img.shields.io/badge/HTML5-orange)  
 ![CSS](https://img.shields.io/badge/CSS3-blue)  
@@ -96,7 +94,7 @@ To download manually:
 
 ---
 
-## 📊 Stats
+##  Stats
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=dark&hide_border=true" />
@@ -108,7 +106,7 @@ To download manually:
 
 ---
 
-## 🙌 Credits
+##  Credits
 
 - 🛠 HTML, CSS, JavaScript — Developed from scratch  
 - 🎨 [Google Fonts](https://fonts.google.com/) — Font styles  
@@ -119,7 +117,7 @@ To download manually:
 
 ---
 
-## 📬 Contact
+##  Contact
 
 - 📧 Email: [salmanahmed32121@gmail.com](mailto:salmanahmed32121@gmail.com)  
 - 💼 LinkedIn: [Salman Ahmed Khan](https://www.linkedin.com/in/salman-ahmed-khan-843240226)  
