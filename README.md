@@ -69,7 +69,10 @@ open index.html        # macOS
 ##  Preview
 
 
-![Live Demo](bookstore_demo.gif)
+![Preview](gif.gif)
+
+
+
 
 ---
 
