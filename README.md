@@ -87,8 +87,7 @@ To download manually:
 ##  Technologies Used
 
 ![HTML](https://img.shields.io/badge/HTML5-orange)  
-![CSS](https://img.shields.io/badge/CSS3-blue)  
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)  
+![CSS](https://img.shields.io/badge/CSS3-blue)   
 ![VS Code](https://img.shields.io/badge/IDE-VSCode-informational)  
 ![GitHub](https://img.shields.io/badge/Hosted-Local-lightgrey)
 
@@ -96,19 +95,19 @@ To download manually:
 
 ##  Stats
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=dark&hide_border=true" />
-  <br><br>
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=dark&hide_border=true" />
-  <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=dark&hide_border=true" />
-</p>
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salman-ahmed-2&theme=dark&hide_border=true" />
+  <br><br>
+  <img src="https://github-readme-stats.vercel.app/api?username=salman-ahmed-2&show_icons=true&theme=dark&hide_border=true" />
+  <br><br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salman-ahmed-2&layout=compact&theme=dark&hide_border=true" />
+</p>
 ---
 
 ##  Credits
 
-- 🛠 HTML, CSS, JavaScript — Developed from scratch  
+- 🛠 HTML, CSS — Developed from scratch  
 - 🎨 [Google Fonts](https://fonts.google.com/) — Font styles  
 - 🌟 [Font Awesome](https://fontawesome.com/) — Icons  
 - 🖼️ [Unsplash](https://unsplash.com/) — Book images (if used)  
