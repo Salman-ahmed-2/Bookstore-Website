@@ -47,7 +47,7 @@ A fully custom-built **Bookstore Web Application** developed for the **CL-1000 I
 ### 🔽 Clone or Download the Project
 
 ```bash
-git clone https://github.com/your-username/bookstore-project
+git clone https://github.com/salman-ahmed-2/Bookstore-Website
 cd bookstore-project
 ```
 
@@ -55,13 +55,13 @@ cd bookstore-project
 
 You can open the site using:
 
-- **Double-click `index.html`**
+- **Double-click `login.html`**
 - Or use VS Code + Live Server
 - Or run in terminal:
 ```bash
-start index.html       # Windows
-xdg-open index.html    # Linux
-open index.html        # macOS
+start login.html       # Windows
+xdg-open login.html    # Linux
+open login.html        # macOS
 ```
 
 ---
